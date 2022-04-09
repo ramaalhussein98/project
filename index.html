@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/chart.min.js"></script>
+
+
+    <title>smarty</title>
+</head>
+
+<body>
+    <!-- start header -->
+    <div class="container">
+        <div class="headerNAv effect2">
+            <span class="smartySpan">Smarty</span>
+            <ul id="nav" class="navList">
+                <li>HOME</li>
+                <li>SECURITY EQUIPMENT<i class="fa fa-angle-down dropdownarrow"></i></li>
+                <li>ROLLUP SHUTTER<i class="fa fa-angle-down dropdownarrow"></i></li>
+                <li>GATE BARRIER</li>
+                <li>SLIDING DOOR<i class="fa fa-angle-down dropdownarrow"></i></li>
+                <li>CONTACT US</li>
+                <li>INQUIRY</li>
+
+            </ul>
+            <i class="fa fa-bars menuIcon" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <!-- 
+    end header -->
+    <!-- start body -->
+    <div class="container">
+        <div class="divCont">
+            <span class="spanOrange">Subject *</span>
+            <input class="inputtxt" type="text" dir="auto">
+            <span class="spanOrange ">Message *</span>
+            <textarea class="txtarea" rows="5"></textarea>
+            <span class="spanOrange d-block">File Attchment</span>
+            <div class="position-relative d-flex">
+                <input id="uploader" class="f-input" />
+                <i class="fa fa-paperclip iconFile" aria-hidden="true"></i>
+                <div class="fileUpload btn btn--browse">
+                    <span>select a File</span>
+                    <input id="file" class="upload" accept=".jpg, .png, .jpeg" type="file" onchange="preview_image()">
+                </div>
+            </div>
+            <span class="spanFileSize">Max file size:20Mb(zip/pdf/jpg/png)</span>
+            <button class="msgBtn"><i class="fa fa-check mr-1" aria-hidden="true"></i>send message</button>
+
+            <img src="" id="new" class="displayImg">
+
+            <img src="" id="old" class="d-none">
+
+            <!-- canvas for chart -->
+            <div>
+                <canvas id="myChart" style="margin-bottom: 7rem;"></canvas>
+            </div>
+            <!-- end chart -->
+        </div>
+    </div>
+    <!-- end body -->
+
+
+    <!-- start footer -->
+    <div class="container-fluid">
+        <div class="footer">
+            <div class="d-flex p-4">
+                <span class="span1"><i class="fa fa-copyright"></i>All Right Reserved,Company</span>
+                <ul class="socialMediaLinks">
+                    <li class="li1"><i class="fa fa-instagram  i1" aria-hidden="true"></i></li>
+                    <li class="li1"><i class="fa fa-twitter i1" aria-hidden="true"></i></li>
+                    <li class="li1"><i class="fa fa-youtube i1" aria-hidden="true"></i></li>
+                    <li class="li1"><i class="fa fa-facebook i1" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- end footer -->
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/pro.js"></script>
+
+</body>
+
+</html>

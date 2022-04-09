@@ -1,0 +1,111 @@
+// xs
+@mixin xs {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+  
+  //// Small devices (landscape phones, 576px and up)
+  @mixin sm {
+    @media (min-width: 577px) {
+      @content;
+    }
+  }
+  
+  // Medium devices (tablets, 768px and up)
+  @mixin md {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+    // Medium devices (tablets, 768px and up)
+    @mixin change {
+      @media (max-width: 768px) {
+        @content;
+      }
+    }
+  // Large devices (desktops, 992px and up)
+  @mixin lg {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @mixin xl {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  
+  ////////////////////////////
+  /////////only///////////////
+  ///////////////////////////
+  
+  // xs
+  @mixin onlyxs {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+  
+  //sm
+  @mixin onlysm {
+    @media (min-width: 577px) and (max-width: 767.98px) {
+      @content;
+    }
+  }
+   //sm
+   @mixin onlysm-xs {
+    @media  (max-width: 767.98px) {
+      @content;
+    }
+  }
+  
+     //sm
+     @mixin onlylg-xs {
+      @media  (max-width: 1199.98px) {
+        @content;
+      }
+    }
+    @mixin lessmd {
+      @media (max-width: 991.98px) {
+        @content;
+      }
+    }
+  //md
+  @mixin onlymd {
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      @content;
+    }
+  }
+  
+  //lg
+  @mixin onlylg {
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      @content;
+    }
+  }
+  
+  // for all devices
+  @mixin screen($property, $value1, $value2, $value3, $value4 , $value5) {
+    @media (max-width: 576px) {
+      #{$property}: $value1;
+    }
+  
+    @media (min-width: 576px)  {
+      #{$property}: $value2;
+    }
+  
+    @media (min-width: 768px) {
+      #{$property}: $value3;
+    }
+  
+    @media (min-width: 992px)  {
+      #{$property}: $value4;
+    }
+    @media (min-width: 1200px)  {
+      #{$property}: $value5;
+    }
+  }
+  
